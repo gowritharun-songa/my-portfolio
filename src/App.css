@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #020617;
+}
+
+/* Radial glow layer */
+.main-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  background: radial-gradient(
+    circle 500px at 50% 200px,
+    #3e3e3e,
+    transparent
+  );
+}
+
+/* Keep content above background */
+.main-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* ===== GLOBAL LAYOUT SYSTEM ===== */
+
+:root {
+  --section-padding-y: 6rem;
+  --section-padding-x: 6rem;
+  --max-width: 1200px;
+}
+
+section {
+  padding: var(--section-padding-y) var(--section-padding-x);
+}
+
+.section-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding-y: 4rem;
+    --section-padding-x: 2rem;
+  }
+}
+
+/* Simple fade + move up animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

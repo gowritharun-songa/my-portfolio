@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.nav-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  font-family: 'Inter', system-ui, sans-serif;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  height: 32px;
+
+  background: rgba(10, 15, 30, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(100, 120, 255, 0.15);
+}
+
+/* Name */
+.name-section {
+  font-size: 1.9rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ded9e2, #747a82);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Links */
+.links ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.links li {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #e2e8f0;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.links li:hover {
+  color: #c2bac9;
+}
+
+/* underline animation */
+.links li::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background: linear-gradient(90deg, #c6b3d9, #8c9db8);
+  transition: width 0.4s ease;
+}
+
+.links li:hover::after {
+  width: 100%;
+}
+
+/* NAV LINKS CONTAINER */
+.nav-links ul {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* LINKS */
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+
+  font-size: 1rem;
+  font-weight: 500;
+  color: #c7d2fe; /* soft light text */
+
+  transition: color 0.3s ease;
+}
+
+/* HOVER COLOR */
+.nav-links a:hover {
+  color: #a855f7; /* purple */
+}
+
+/* UNDERLINE EFFECT */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #a855f7, #22d3ee);
+
+  transition: width 0.3s ease;
+}
+
+/* SHOW UNDERLINE ON HOVER */
+.nav-links a:hover::after {
+  width: 100%;
+}

@@ -1,0 +1,106 @@
+/* ===== SKILLS SECTION ===== */
+
+.skills-section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 5rem 1rem;
+  background: #020617;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #e5e7eb;
+}
+
+.skills-wrapper {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Title */
+.skills-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: #ffffff;
+}
+
+/* Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+/* Card */
+.skill-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 2rem;
+
+  transition: border-color 0.3s ease;
+}
+
+.skill-card:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Card Header */
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-icon {
+  color: #c7d2fe;
+}
+
+.skill-card h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Skill Chips */
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skill-chip {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.85rem;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e5e7eb;
+}
+
+@media (max-width: 1024px) {
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .skills-section {
+      padding: 4rem 2rem;
+    }
+  
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .skills-title {
+      font-size: 2rem;
+    }
+  }
+  
