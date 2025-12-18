@@ -102,7 +102,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="footer-bottom">
           <p>
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Gowri Tharun Songa. All rights reserved.
           </p>
 
           <div className="footer-legal">
