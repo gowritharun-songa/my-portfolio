@@ -29,9 +29,9 @@ const Hero = () => {
           <div className="social-accounts">
             <div className="links">
             
-              <a> <LuLinkedin /></a>
-              <a> <LuGithub /></a>
-              <a> <LuMail /> </a>
+              <a href="https://www.linkedin.com/in/gowri-tharun/"> <LuLinkedin /></a>
+              <a href="https://github.com/gowritharun-songa"> <LuGithub /></a>
+              <a href="mailto:gowritharun461@gmail.com"> <LuMail /> </a>
             </div>
           </div>
         </div>
