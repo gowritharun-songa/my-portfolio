@@ -2,7 +2,7 @@ import '../styles/CertificationCard.css';
 
 const CertificationCard = ({ title, issuer, des }) => {
   return (
-    <div className="cert-card fade-up " id='certifications'>
+    <div className="cert-card fade-up">
       <h3 className="cert-card-title">{title}</h3>
       <p className="cert-card-issuer">
         Issued by: <span>{issuer}</span>
@@ -53,7 +53,7 @@ const Certifications = () => {
   ];
 
   return (
-    <section className="cert-section">
+    <section className="cert-section" id="certifications">
       <h2 className="cert-section-title">Certifications</h2>
 
       <div className="cert-grid">

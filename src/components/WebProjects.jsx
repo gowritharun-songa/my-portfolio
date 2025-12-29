@@ -12,7 +12,7 @@ const ProjectCard = ({
   date
 }) => {
   return (
-    <div className="project-card" id="projects">
+    <div className="project-card">
       {/* Icon Header */}
       <div className="project-card-header">
         <Icon size={64} />
@@ -96,7 +96,7 @@ const WebProjects = () => {
   ];
 
   return (
-    <section className="projects-section fade-up">
+    <section className="projects-section fade-up" id="projects">
       <h2 className="projects-title">Projects</h2>
 
       <div className="projects-grid">
