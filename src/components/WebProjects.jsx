@@ -1,5 +1,9 @@
-import { ShoppingBag, ShoppingCart, Music } from 'lucide-react';
+import { ShoppingBag, ShoppingCart, Music, HandFist, Paperclip, ScissorsIcon, Scissors, Hand, Gem, GemIcon } from 'lucide-react';
 import '../styles/WebProjects.css';
+import { GiRock } from 'react-icons/gi';
+import { FaPaperPlane } from 'react-icons/fa';
+import { GoNumber } from 'react-icons/go';
+import { BsGem } from 'react-icons/bs';
 
 /* ===== SINGLE PROJECT CARD ===== */
 const ProjectCard = ({
@@ -92,6 +96,39 @@ const WebProjects = () => {
       technologies: ["Java", "Java Sound API"],
       viewLink: "#",
       githubLink: "https://github.com/gowritharun-songa/Music-Player"
+    },
+    {
+      id: 4,
+      icon: HandFist,
+      title: "Rock Paper Scissors",
+      date: "March 2025",
+      description: 
+        "Developed a simple Rock - Paper - Scissors game using the frontend tech stack",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      viewLink: "https://gowritharun-songa.github.io/Rock-Paper-Scissors/",
+      githubLink: "https://github.com/gowritharun-songa/Rock-Paper-Scissors"
+    },
+    {
+      id: 5,
+      icon: BsGem,
+      title: "Jwellery Security",
+      date: "November 2025",
+      description: 
+      "Detects motion using ultrasonic distance measurements Triggers a buzzer alarm when someone comes near the jewellery",
+      technologies: ["C++", "Arduino"],
+      viewLink: "#",
+      githubLink: "https://github.com/gowritharun-songa/Jewellery-Security"
+    },
+    {
+      id: 6,
+      icon: GoNumber,
+      title: "Number guessing Game",
+      date: "June 2025",
+      description: 
+      "Number-Guessing Game A simple terminal-based game where the user tries to guess a randomly chosen number between 1 and n. After each guess, the game provides feedback indicating whether the chosen number is too low or too high",
+      technologies: ["Python"],
+      viewLink: "#",
+      githubLink: "https://github.com/gowritharun-songa/Number-Guessing"
     }
   ];
 
