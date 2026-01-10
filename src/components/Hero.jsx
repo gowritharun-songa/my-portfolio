@@ -1,6 +1,8 @@
 
 import { LuLinkedin, LuGithub, LuMail } from "react-icons/lu";
 import '../styles/Hero.css'
+import {SiLeetcode} from "react-icons/si";
+import {TbBrandLeetcode} from "react-icons/tb";
 
 const Hero = () => {
   return(
@@ -29,9 +31,10 @@ const Hero = () => {
           <div className="social-accounts">
             <div className="links">
             
-              <a href="https://www.linkedin.com/in/gowri-tharun/"> <LuLinkedin /></a>
-              <a href="https://github.com/gowritharun-songa"> <LuGithub /></a>
-              <a href="mailto:gowritharun461@gmail.com"> <LuMail /> </a>
+              <a href="https://www.linkedin.com/in/gowri-tharun/" target='_blank'> <LuLinkedin /></a>
+              <a href="https://github.com/gowritharun-songa" target='_blank'> <LuGithub /></a>
+              <a href="mailto:gowritharun461@gmail.com" target='_blank'> <LuMail /> </a>
+              <a href="https://leetcode.com/u/afHxrJEyGX/" target="_blank"><SiLeetcode/></a>
             </div>
           </div>
         </div>

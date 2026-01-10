@@ -1,5 +1,5 @@
 
-import profile from '../assests/profile.png' // placeholder
+// import profile from '../assests/profile.png' placeholder
 import mainProfile from '../assests/main.jpg'
 import '../styles/About.css'
 // import '../styles/App.css'
