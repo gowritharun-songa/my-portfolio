@@ -1,5 +1,6 @@
 
-import profile from '../assests/profile.png'
+import profile from '../assests/profile.png' // placeholder
+import mainProfile from '../assests/main.jpg'
 import '../styles/About.css'
 // import '../styles/App.css'
 const About = () => {
@@ -13,7 +14,7 @@ const About = () => {
             <h3>About me</h3>
         </div>
         <div className="image">
-            <img src={profile} />
+            <img src={mainProfile} alt="profile" />
         </div>
         <div className="description">
             <h4>
