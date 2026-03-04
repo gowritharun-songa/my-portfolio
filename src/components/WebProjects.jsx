@@ -1,9 +1,13 @@
-import { ShoppingBag, ShoppingCart, Music, HandFist, Paperclip, ScissorsIcon, Scissors, Hand, Gem, GemIcon } from 'lucide-react';
+import { ShoppingBag, ShoppingCart, Music, HandFist, Paperclip, ScissorsIcon, Scissors, Hand, Gem, GemIcon, FeatherIcon } from 'lucide-react';
 import '../styles/WebProjects.css';
 import { GiRock } from 'react-icons/gi';
-import { FaPaperPlane } from 'react-icons/fa';
+import { FaMemory, FaPaperPlane } from 'react-icons/fa';
 import { GoNumber } from 'react-icons/go';
-import { BsGem } from 'react-icons/bs';
+import { BsGem, BsMemory } from 'react-icons/bs';
+import { BiMemoryCard } from 'react-icons/bi';
+import { MdMemory } from 'react-icons/md';
+import { GrMemory } from 'react-icons/gr';
+import { LiaMemorySolid } from 'react-icons/lia';
 
 /* ===== SINGLE PROJECT CARD ===== */
 const ProjectCard = ({
@@ -121,14 +125,14 @@ const WebProjects = () => {
     },
     {
       id: 6,
-      icon: GoNumber,
-      title: "Number guessing Game",
-      date: "June 2025",
+      icon: FeatherIcon,
+      title: "Memory Archive",
+      date: "February 2026",
       description: 
-      "Number-Guessing Game A simple terminal-based game where the user tries to guess a randomly chosen number between 1 and n. After each guess, the game provides feedback indicating whether the chosen number is too low or too high",
-      technologies: ["Python"],
-      viewLink: "#",
-      githubLink: "https://github.com/gowritharun-songa/Number-Guessing"
+      "Memory Archive is a full-stack application for storing and sharing personal memories",
+      technologies: ["Next.js", "MongoDB", "Express", "Tailwind CSS"],
+      viewLink: "https://memory-archive-ten.vercel.app",
+      githubLink: "https://github.com/gowritharun-songa/memory-archive"
     }
   ];
 
