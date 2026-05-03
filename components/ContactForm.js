@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { Send, CheckCircle, AlertCircle } from 'lucide-react'
 
 const ContactForm = () => {
-  const [status, setStatus] = useState('idle') // idle, sending, success, error
+  const [status, setStatus] = useState('idle')
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -20,14 +20,35 @@ const ContactForm = () => {
     e.preventDefault()
     setStatus('sending')
     
-    // Simulate API call
     try {
-      await new Promise(resolve => setTimeout(resolve, 1500))
-      setStatus('success')
-      setFormData({ name: '', email: '', message: '' })
-      setTimeout(() => setStatus('idle'), 5000)
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setStatus('success')
+        setFormData({ name: '', email: '', message: '' })
+        setTimeout(() => setStatus('idle'), 5000)
+      } else {
+        console.error("Submission failed:", result);
+        setStatus('error')
+        setTimeout(() => setStatus('idle'), 5000)
+      }
     } catch (error) {
+      console.error("Error submitting form:", error);
       setStatus('error')
+      setTimeout(() => setStatus('idle'), 5000)
     }
   }
 
